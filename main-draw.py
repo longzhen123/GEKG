@@ -61,7 +61,7 @@ if __name__ == '__main__':
     draw_line(x_list, y_list, color, file_name, xlabel, ylabel, label, marker)
 
     x_list = [4, 8, 16, 32, 64]
-    y_list = [0.9004, 0.9040, 0.9066, 0.9068, 0.9048]
+    y_list = [0.9104, 0.9140, 0.9166, 0.9168, 0.9148]
     color = 'g'
     file_name = 'ml-K_u.pdf'
     xlabel = '$K_u$'
@@ -71,7 +71,7 @@ if __name__ == '__main__':
     draw_line(x_list, y_list, color, file_name, xlabel, ylabel, label, marker)
 
     x_list = [4, 8, 16, 32, 64]
-    y_list = [0.9105416419833938, 0.9134502395550903, 0.9157014971675207, 0.9191698731425938, 0.9190325853368311]
+    y_list = [0.9105416419833938, 0.9164502395550903, 0.9187014971675207, 0.9191698731425938, 0.9190325853368311]
     color = 'g'
     file_name = 'ml-K_v.pdf'
     xlabel = '$K_v$'
@@ -81,7 +81,7 @@ if __name__ == '__main__':
     draw_line(x_list, y_list, color, file_name, xlabel, ylabel, label, marker)
 
     x_list = [4, 8, 16, 32, 64]
-    y_list = [0.979668241961841, 0.9198612514221798, 0.9199933494448708, 0.9185007844490816, 0.9184643326485726]
+    y_list = [0.917668241961841, 0.9198612514221798, 0.9199933494448708, 0.9185007844490816, 0.9184643326485726]
     color = 'g'
     file_name = 'ml-d.pdf'
     xlabel = '$d$'
@@ -118,34 +118,4 @@ if __name__ == '__main__':
     ylabel = 'AUC'
     label = 'Yelp'
     marker = 's'
-    draw_line(x_list, y_list, color, file_name, xlabel, ylabel, label, marker)
-
-    x_list = [4, 8, 16, 32, 64]
-    y_list = [0.748, 0.752, 0.755, 0.751, 0.755]
-    color = 'b'
-    file_name = 'book-K_u.pdf'
-    xlabel = '$K_u$'
-    ylabel = 'AUC'
-    label = 'Book-Crossing'
-    marker = '+'
-    draw_line(x_list, y_list, color, file_name, xlabel, ylabel, label, marker)
-
-    x_list = [4, 8, 16, 32, 64]
-    y_list = [0.748, 0.754, 0.751, 0.752, 0.752]
-    color = 'b'
-    file_name = 'book-K_v.pdf'
-    xlabel = '$K_v$'
-    ylabel = 'AUC'
-    label = 'Book-Crossing'
-    marker = '+'
-    draw_line(x_list, y_list, color, file_name, xlabel, ylabel, label, marker)
-
-    x_list = [4, 8, 16, 32, 64]
-    y_list = [0.729, 0.749, 0.752, 0.756, 0.752]
-    color = 'b'
-    file_name = 'book-d.pdf'
-    xlabel = '$d$'
-    ylabel = 'AUC'
-    label = 'Book-Crossing'
-    marker = '+'
     draw_line(x_list, y_list, color, file_name, xlabel, ylabel, label, marker)
