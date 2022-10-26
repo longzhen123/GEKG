@@ -12,9 +12,9 @@ class GEKG(nn.Module):
 
     def __init__(self, args, n_entity, n_relation):
         super(GEKG, self).__init__()
-        # t.manual_seed(255)
-        # t.cuda.manual_seed(255)
+
         self.dim = args.dim
+        self.generator_weight = args.generator_weight
         entity_embedding_matrix = t.randn(n_entity, self.dim)
         relation_embedding_matrix = t.randn(n_relation, self.dim)
         nn.init.xavier_uniform_(entity_embedding_matrix)
@@ -113,7 +113,7 @@ class GEKG(nn.Module):
         predict = t.sigmoid((user_embeddings * item_embeddings).sum(dim=1))
         base_loss = self.criterion(predict, label)
 
-        return base_loss + 1e-6 * generator_loss
+        return base_loss + self.generator_weight * generator_loss
 
 
 def eval_topk(model, rec, item_neighbors, user_records, batch_size, topk):
