@@ -28,7 +28,7 @@ def draw_line(x_list, y_list, color, file_name, xlabel, ylabel, label, marker, f
     # 关键代码
 
     # plt.show()
-    plt.savefig(file_name, bbox_inches='tight')
+    plt.savefig('./fig/' + file_name, bbox_inches='tight')
 
 
 def get_dataset_attribute():

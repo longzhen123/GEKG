@@ -16,6 +16,7 @@ if __name__ == '__main__':
     # parser.add_argument('--K_u', type=int, default=8, help='用户历史集合大小')
     # parser.add_argument('--K_v', type=int, default=16, help='邻居集合大小')
     # parser.add_argument('--ratio', type=float, default=1, help='训练集使用百分比')
+    # parser.add_argument('--generator_weight', type=float, default=1e-4, help='生成器损失函数系数')
     # parser.add_argument('--topk', type=int, default=10, help='top K')
     #
     # parser.add_argument('--dataset', type=str, default='ml', help='数据集')
@@ -54,6 +55,7 @@ if __name__ == '__main__':
     # parser.add_argument('--K_u', type=int, default=8, help='用户历史集合大小')
     # parser.add_argument('--K_v', type=int, default=32, help='邻居集合大小')
     # parser.add_argument('--ratio', type=float, default=1, help='训练集使用百分比')
+    parser.add_argument('--generator_weight', type=float, default=1e-5, help='生成器损失函数系数')
     # parser.add_argument('--topk', type=int, default=10, help='top K')
 
     args = parser.parse_args()
